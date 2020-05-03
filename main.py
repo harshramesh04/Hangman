@@ -15,7 +15,6 @@ def word_gen():
     word_gen.new_word = random.choice(word)
     if len(word_gen.new_word) == game_start.wordlen + 1:
         word_gen.wordList = list(word_gen.new_word.strip())
-        print(word_gen.wordList)
         for i in word_gen.wordList:
             guesslist.append('_')
     else:
